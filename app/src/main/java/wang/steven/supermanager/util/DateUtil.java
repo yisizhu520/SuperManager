@@ -25,6 +25,14 @@ public class DateUtil {
         return null;
     }
 
+    public static String getDateStr(Date date){
+        return sdf.format(date);
+    }
+
+    public static String getMonthAndDay(String text){
+        SimpleDateFormat s = new SimpleDateFormat("MM-dd",Locale.CHINA);
+        return s.format(parseDate(text));
+    }
 
 
 

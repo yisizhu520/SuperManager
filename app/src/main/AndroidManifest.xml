@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="wang.steven.supermanager"
-    >
+          package="wang.steven.supermanager">
 
     <application
+        android:name=".SuperApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".SuperApplication"
-        >
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".SalesAlarmActivity">
+        </activity>
+        <activity android:name=".ProductDetailActivity">
+        </activity>
+        <activity android:name=".CategoryChartActivity">
+        </activity>
+        <activity android:name=".TopSaleActivity">
+        </activity>
+        <activity android:name=".RecordSaleActivity">
         </activity>
     </application>
 

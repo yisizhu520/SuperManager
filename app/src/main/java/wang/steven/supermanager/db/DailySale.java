@@ -13,13 +13,17 @@ public class DailySale {
 
 
     public static final String ID = "id";
-    public static final String MARKET_ID = "marketId";
-    public static final String VOLUME = "volume";
+    public static final String PRODUCT_ID = "product_id";
+    public static final String VOLUME = "sales_volume";
     public static final String DATE = "date";
+    public static final String SELL_PRICE = "sell_price";
+    public static final String COST_PRICE = "cost_price";
 
     private int id;
-    private int marketId;
-    private float volume;
+    private int productId;
+    private int volume;
+    private float sellPrice;
+    private float costPrice;
     private Date date;
 
     public int getId() {
@@ -31,21 +35,39 @@ public class DailySale {
         return this;
     }
 
-    public int getMarketId() {
-        return marketId;
+    public int getProductId() {
+        return productId;
     }
 
-    public DailySale setMarketId(int marketId) {
-        this.marketId = marketId;
+    public DailySale setProductId(int productId) {
+        this.productId = productId;
         return this;
     }
 
-    public float getVolume() {
+    public int getVolume() {
         return volume;
     }
 
-    public DailySale setVolume(float volume) {
+    public DailySale setVolume(int volume) {
         this.volume = volume;
+        return this;
+    }
+
+    public float getSellPrice() {
+        return sellPrice;
+    }
+
+    public DailySale setSellPrice(float sellPrice) {
+        this.sellPrice = sellPrice;
+        return this;
+    }
+
+    public float getCostPrice() {
+        return costPrice;
+    }
+
+    public DailySale setCostPrice(float costPrice) {
+        this.costPrice = costPrice;
         return this;
     }
 

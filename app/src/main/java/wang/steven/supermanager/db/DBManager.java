@@ -37,7 +37,7 @@ public class DBManager {
     }
 
     public SQLiteDatabase getSupermarketDB(){
-        return getDatabase("supermarket.db");
+        return getDatabase("supermanager.db");
     }
 
     /**

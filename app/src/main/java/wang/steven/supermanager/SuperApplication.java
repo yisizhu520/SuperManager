@@ -4,8 +4,6 @@ import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
 import wang.steven.supermanager.db.DBManager;
-import wang.steven.supermanager.db.DailySaleDao;
-import wang.steven.supermanager.db.MarketDao;
 
 /**
  * 这里添加描述
@@ -29,9 +27,9 @@ public class SuperApplication extends Application{
         super.onCreate();
         sInstance = this;
         superDB = DBManager.getInstance(this).getSupermarketDB();
-        MarketDao dao = new MarketDao();
-        dao.getAllMarkets();
-        new DailySaleDao().getAllInfo();
+        //MarketDao dao = new MarketDao();
+        //dao.getAllMarkets();
+       // new DailySaleDao().getAllInfo();
     }
 
     public SQLiteDatabase getSupermarketDB(){
